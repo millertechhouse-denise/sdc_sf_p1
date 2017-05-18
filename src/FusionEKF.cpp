@@ -95,9 +95,6 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 		float px = 0.0;
 		float py = 0.0;
 		
-		std::cout << ekf_.P_ << std::endl;
-		//exit(0);
-		
 
     if (measurement_pack.sensor_type_ == MeasurementPackage::RADAR) {
       /**
